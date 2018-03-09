@@ -1,0 +1,26 @@
+---
+layout: total
+---
+
+<div class="page-content">
+    <div class="mdl-grid">
+        {% for post in site.posts %}
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--stretch" style="margin-bottom: 30px">
+            <div class="mdl-card mdl-shadow--2dp index-list-card">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <p class="article-list-date">{{ post.day }}</p>
+                    <p>{{ post.excerpt }}</p>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url }}">
+                        查看文章
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

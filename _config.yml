@@ -1,0 +1,49 @@
+title: 秦时星月的小窝
+url: http://qinshixixing.space
+subtitle: Only My Railgun!
+author: 秦时星月
+tag: 前端码农
+email: qinshixixing@icloud.com
+
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: article
+- scope:
+    path: about
+    type: pages
+  values:
+    layout: about
+
+navigation:
+-
+  text: 首页
+  icon: home
+  link: /
+-
+  text: 关于我
+  icon: person
+  link: /about
+
+socialAccount:
+-
+  type: github
+  url: https://github.com/qinshixixing
+-
+  type: twitter
+  url: https://twitter.com/qinshixixing
+-
+  type: weibo
+  url: https://weibo.com/277229612
+-
+  type: facebook
+  url: https://www.facebook.com/qinshixixing
+-
+  type: google-plus
+  url: https://plus.google.com/u/0/113288887929108547502
+-
+  type: vk
+  url: https://vk.com/qinshixixing
+
