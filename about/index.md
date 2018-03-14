@@ -12,4 +12,4 @@ layout: about
 
 #### ps:关于本博客
 
-这几天把给予jekyll的博客给搭建好了，功能比较简陋，但是现在也没什么内容，就先用极简的风格好了，之前在hexo上的文章都移了过来。之所以选择jekyll而放弃hexo，还是因为github对jekyll的支持更好，不需要自己手动生成静态文件上传了。现在github居然内置支持切换jekyll模版，不过模版终究还是没能让我满意。自己照着jekyll文档写了一个，样式上用了google的material design，个人比较喜欢这种设计风格在手机上的显示效果。
+博客基于jekyll搭建，源码托管在[github](https://github.com/qinshixixing/blog)上，使用[netlify](https://www.netlify.com/)构建站点。博客功能比较简陋，也没什么太多内容，就先用极简风格好了。github内置的模版没能让我满意，自己照着jekyll文档写了一个，样式上用了google的meterial design，个人比较喜欢这种设计风格在手机上的显示效果。
