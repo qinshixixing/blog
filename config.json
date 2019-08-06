@@ -1,0 +1,45 @@
+{
+  "title": "秦时星月的小窝",
+  "signature": "oath sign",
+  "author": "秦时星月",
+  "description": "前端码农",
+  "navigationList": [
+    {
+      "text": "首页",
+      "icon": "home",
+      "url": "/"
+    },
+    {
+      "text": "文章列表",
+      "icon": "list",
+      "url": "/IT"
+    },
+    {
+      "text": "关于我",
+      "icon": "person",
+      "url": "/about"
+    }
+  ],
+  "socialAccount": [
+    {
+      "type": "github",
+      "icon": "mdi-github-circle",
+      "url": "https://github.com/qinshixixing"
+    },
+    {
+      "type": "twitter",
+      "icon": "mdi-twitter",
+      "url": "https://twitter.com/qinshixixing"
+    },
+    {
+      "type": "weibo",
+      "icon": "mdi-sina-weibo",
+      "url": "https://weibo.com/277229612"
+    },
+    {
+      "type": "email",
+      "icon": "email",
+      "url": "mailto:qinshixixing@icloud.com"
+    }
+  ]
+}

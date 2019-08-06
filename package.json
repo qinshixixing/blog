@@ -1,0 +1,53 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "This is my blog.",
+  "author": "qinshixixing",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@mdi/font": "^3.8.95",
+    "@nuxtjs/axios": "^5.3.6",
+    "github-markdown-css": "^3.0.1",
+    "markdown-it": "^9.0.1",
+    "markdown-it-highlightjs": "^3.0.0",
+    "markdown-it-meta": "0.0.1",
+    "material-design-icons": "^3.0.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^0.2.1",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-vuetify": "^0.2.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^2.6.0",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.2.1",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.4",
+    "raw-loader": "^3.1.0",
+    "vue-jest": "^3.0.3"
+  }
+}
