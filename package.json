@@ -24,8 +24,8 @@
     "@mdi/font": "^3.8.95",
     "@nuxtjs/axios": "^5.3.6",
     "github-markdown-css": "^3.0.1",
+    "highlight.js": "^9.15.9",
     "markdown-it": "^9.0.1",
-    "markdown-it-highlightjs": "^3.0.0",
     "markdown-it-meta": "0.0.1",
     "material-design-icons": "^3.0.1",
     "nuxt": "^2.0.0"

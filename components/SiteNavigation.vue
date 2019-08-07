@@ -71,7 +71,7 @@ export default {
     return {
       siteTitle: this.$config.title,
       signature: this.$config.signature,
-      showDrawer: false,
+      showDrawer: !this.$vuetify.breakpoint.smAndDown,
       pcShowMiniVariant: false,
       list: this.$config.navigationList,
       socialAccount: this.$config.socialAccount,
@@ -89,9 +89,6 @@ export default {
       if (this.isMobile) return false;
       return this.pcShowMiniVariant;
     }
-  },
-  mounted() {
-    if (!this.isMobile) this.showDrawer = true;
   },
   methods: {
     setNavStatus() {

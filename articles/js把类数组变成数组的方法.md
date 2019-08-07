@@ -5,9 +5,9 @@ introduction: js技巧总结
 
 js中有很多类数组对象，比如通过如下方法获得的nodeList：
 
-{% highlight javascript linenos %}
+```javascript
 var nodeList=document.querySelectorAll("div");
-{% endhighlight %}
+```
 
 这里的nodeList是一个div的集合，就是一个类数组，类数组具有length属性，可以通过nodeList[0]这样的方式取得里面每一项div。然而nodeList并不是一个真正的数组，并不能调用数组可以使用的大多数方法。
 
@@ -17,11 +17,11 @@ var nodeList=document.querySelectorAll("div");
 
 与其原理类似的方法：
 
-{% highlight javascript linenos %}
+```javascript
 Array.prototype.slice.apply(arguments);
 [].slice.call(arguments);
 [].slice.apply(arguments);
-{% endhighlight %}
+```
 
 slice方法可以接受一个有length属性的对象将其分割后返回一个数组，由于没有对slice方法给予其他参数，所以默认返回所有由类数组对象中每一项组成的数组元素。由于类数组对象没有slice方法，所以要使用slice()函数必须用以上方式。
 
@@ -29,10 +29,10 @@ slice方法可以接受一个有length属性的对象将其分割后返回一个
 
 #### 3. 使用扩展运算符
 
-{% highlight javascript linenos %}
+```javascript
 var myArray = [];
 var nodeList=document.querySelectorAll("div");
 myArray = [...nodeList]
-{% endhighlight %}
+```
 
 此时myArray中每一项与nodeList中相同。

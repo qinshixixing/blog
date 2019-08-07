@@ -5,11 +5,11 @@ introduction: css属性总结
 
 css中有一个[animation](https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation)属性用来专门设定对应选择器所代表的元素所要展现的动画：
 
-{% highlight css linenos %}
+```css
 div {
     animation: 3s ease-in 1s 2 reverse both paused slidein;
 }
-{% endhighlight %}
+```
 
 这个属性的值由8个部分组成，每一个部分又可以拆开来写，可以写成八个属性，分别为：
 
@@ -31,7 +31,7 @@ div {
 
 所以可以写成：
 
-{% highlight css linenos %}
+```css
 div {
     animation-name: slidein;
     animation-duration: 3s;
@@ -42,13 +42,13 @@ div {
     animation-fill-mode: both;
     animation-play-state: paused;
 }
-{% endhighlight %}
+```
 
 相应的值可以在相关链接页面中查阅。
 
 只有animation-name中指定的动画名称代表的具体动画可以正常执行动画才会生效，具体的动画则由[@keyframes](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@keyframes)定义，比如：
 
-{% highlight css linenos %}
+```css
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -64,7 +64,7 @@ div {
 div {
     animation-name: slidein;
 }
-{% endhighlight %}
+```
 
 一些其他有用的动画使用说明：
 

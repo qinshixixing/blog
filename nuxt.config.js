@@ -29,7 +29,8 @@ export default {
   css: [
     'material-design-icons/iconfont/material-icons.css',
     '@mdi/font/css/materialdesignicons.css',
-    'github-markdown-css'
+    'github-markdown-css',
+    '~/assets/highlight.scss'
   ],
   /*
    ** Plugins to load before mounting the App

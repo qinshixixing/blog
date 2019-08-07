@@ -20,9 +20,8 @@
               <v-btn
                 text
                 color="indigo"
-                :href="'/article/' + item.title"
                 height="40px"
-                class="email"
+                @click="toArticleDetail(item.title)"
               >
                 查看文章
               </v-btn>
@@ -51,6 +50,16 @@ export default {
     return {
       list: await Promise.all(getArticles)
     };
+  },
+  methods: {
+    toArticleDetail(name) {
+      this.$router.push({
+        path: '/article',
+        params: {
+          name
+        }
+      });
+    }
   }
 };
 </script>

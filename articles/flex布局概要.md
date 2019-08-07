@@ -8,6 +8,7 @@ introduction: flex布局总结
 ###### 1. 把容器设置成felex容器
 
 ```css
+
 .container {
     display: flex;
 }
@@ -15,20 +16,22 @@ introduction: flex布局总结
 
 ###### 2. 设置flex容器主轴方向（按行或按列排布）和是否多行（列）显示
 
-{% highlight css linenos %}
+```css
+
 .container{
     flex-flow: row wrap;
 }
-{% endhighlight %}
+```
 
 [flex-flow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-flow)属性可拆分为：
 
-{% highlight css linenos %}
+```css
+
 .container {
     flex-direction: row;
     flex-wrap: wrap;
 }
-{% endhighlight %}
+```
 
 [flex-direction](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction)取值：row | row-reverse | column | column-reverse
 
@@ -38,19 +41,21 @@ introduction: flex布局总结
 
 主轴：
 
-{% highlight css linenos %}
+```css
+
 .container {
     justify-content: space-around;
 }
-{% endhighlight %}
+```
 
 横轴：
 
-{% highlight css linenos %}
+```css
+
 .container {
     align-items: flex-end;
 }
-{% endhighlight %}
+```
 
 [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content)取值：flex-start | flex-end | center | space-between | space-around
 
@@ -60,21 +65,23 @@ introduction: flex布局总结
 
 ###### 1. flex项的动态尺寸
 
-{% highlight css linenos %}
+```css
+
 .item {
     flex: 2 1 200px;
 }
-{% endhighlight %}
+```
 
 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)属性可拆分为：
 
-{% highlight css linenos %}
+```css
+
 .item {
     flex-grow: 2;
     flex-shrink: 1;
     flex-basis: 200px;
 }
-{% endhighlight %}
+```
 
 [flex-grow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow)为弹性盒子项的拉伸因子，取值为数字
 
@@ -85,21 +92,23 @@ introduction: flex布局总结
 
 ###### 2. flex项在横轴上的位置
 
-{% highlight css linenos %}
+```css
+
 .item {
     align-self: flex-end;
 }
-{% endhighlight %}
+```
 
 [align-self](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-self)会覆盖包裹其的flex容器中为所有flex项设置的align-items属性，取值为：auto | flex-start | flex-end | center | baseline | stretch
 
 ###### 3. flex项排序
 
-{% highlight css linenos %}
+```css
+
 .item {
     order: 1;
 }
-{% endhighlight %}
+```
 
 [order](https://developer.mozilla.org/zh-CN/docs/Web/CSS/order)规定了弹性容器中的可伸缩项目在布局时的顺序。元素按照order属性的值的增序进行布局。拥有相同order属性值的元素按照它们在源代码中出现的顺序进行布局。
 
