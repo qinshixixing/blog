@@ -54,10 +54,7 @@ export default {
   methods: {
     toArticleDetail(name) {
       this.$router.push({
-        path: '/article',
-        params: {
-          name
-        }
+        path: `/article/${name}`
       });
     }
   }

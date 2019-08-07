@@ -30,7 +30,8 @@ export default {
     'material-design-icons/iconfont/material-icons.css',
     '@mdi/font/css/materialdesignicons.css',
     'github-markdown-css',
-    '~/assets/highlight.scss'
+    '~/assets/highlight.scss',
+    '~/assets/base.scss'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -41,16 +42,16 @@ export default {
    */
   devModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
-    '~/modules/articles'
+    '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/vuetify',
+    '~/modules/articles'
   ],
   /*
    ** Axios module configuration
@@ -62,7 +63,6 @@ export default {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
     defaultAssets: {
       font: false,
       icons: false
